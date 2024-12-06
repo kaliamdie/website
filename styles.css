@@ -1,0 +1,381 @@
+/* 
+Author: Kali Amdie 
+Date: December 6, 2024
+File Name: styles.css
+
+*/
+
+
+/* General Styles */
+
+body {
+    background-image: url('images/mesob.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative; 
+}
+
+/* Overlay to reduce brightness */
+body::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); 
+    z-index: -1; 
+}
+
+/* Optional: Customize Hero Section */
+.hero {
+    background-image: url('images/mesob.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+    color: #fff; 
+    position: relative; 
+}
+
+/* Overlay for Hero Section */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Darker overlay */
+    z-index: -1;
+}
+
+
+header {
+    background: #6b4226;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #f29c11;
+}
+
+/* background for About section */
+.about {
+    background-color: white; 
+    color: #333;
+    padding: 2rem; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+/* Home Page Styles */
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 4rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background-color: #f29c11;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #e88c0d;
+}
+
+/* Specialties Section */
+.specialties {
+    background-color: #fff;
+    padding: 3rem 1rem;
+}
+
+.specialties h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #6b4226;
+    margin-bottom: 2rem;
+}
+
+.specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.specialty-item {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.specialty-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.specialty-item h3 {
+    margin-top: 1rem;
+    color: #6b4226;
+}
+
+.specialty-item p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Customer Reviews Section */
+.reviews {
+    background-color: #f4f4f4;
+    padding: 3rem 1rem;
+}
+
+.reviews h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #6b4226;
+    margin-bottom: 2rem;
+}
+
+.review-item {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+    font-style: italic;
+    color: #333;
+}
+
+.review-item h4 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #6b4226;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Menu Page Styles */
+.menu {
+    padding: 3rem 0;
+    background-color: #fff;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #6b4226;
+    margin-bottom: 2rem;
+}
+
+.menu-columns {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 2rem; 
+}
+
+.menu-column {
+    width: 48%; 
+}
+
+.menu-item {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.menu-item img {
+    max-width: 100%; 
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.menu-item h3 {
+    color: black;
+}
+
+
+.menu-item h4 {
+    color: #6b4226;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+    color: #333;
+}
+
+/* Menu Page Styles */
+.menu-column .menu-item img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    margin: 0 auto; 
+    display: block; }
+
+/* Adjusting Image Display in Menu */
+.menu-item img {
+    max-width: 300px; 
+    width: 100%; 
+    height: auto;
+    margin: 0 auto; 
+    display: block; 
+}
+
+/* Responsive Layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .menu-column {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .specialties-grid {
+        grid-template-columns: 1fr;}
+}
+/* Contact Section */
+.contact {
+    background-color: #f4f4f4;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    color: #6b4226;
+    margin-bottom: 1.5rem;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #f29c11;
+    outline: none;
+    box-shadow: 0 0 5px rgba(242, 156, 17, 0.5);
+}
+
+#contactForm textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#contactForm button {
+    background-color: #f29c11;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contactForm button:hover {
+    background-color: #e88c0d;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact .container p {
+    text-align: center;
+}
